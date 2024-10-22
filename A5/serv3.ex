@@ -22,7 +22,7 @@ defmodule Serv3 do
 
       msg ->
         IO.puts("(serv3) Not handled: #{inspect(msg)}")
-        Serv3.loop(acc + 1) 
+        Serv3.loop(acc + 1)
     end
   end
 end

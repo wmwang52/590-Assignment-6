@@ -10,7 +10,7 @@ defmodule Serv1 do
       :update ->
         IO.puts("(serv1) Updating code. testtest")
         Code.compile_file("serv1.ex")
-        apply(__MODULE__, :loop, [next_pid])  
+        apply(__MODULE__, :loop, [next_pid])
 
       :halt ->
         send(next_pid, :halt)

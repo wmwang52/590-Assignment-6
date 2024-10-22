@@ -36,7 +36,7 @@ defmodule Serv2 do
 
       msg ->
         send(next_pid, msg)
-        Serv2.loop(next_pid) 
+        Serv2.loop(next_pid)
     end
   end
 end
