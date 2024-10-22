@@ -54,9 +54,6 @@
     {:neg, 4}  # Output: (serv1) neg 4 = -4
     ```
 
-- **Unrecognized Messages**: 
-  - If the message does not match any pattern, it is passed to `Serv2` without modification.
-
 #### 2. **For Serv3**:
 - **Error Handling**:
   - `Serv3` intercepts error messages of the form `{:error, message}` and prints the error. Example:
